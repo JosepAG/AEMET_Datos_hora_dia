@@ -18,7 +18,7 @@ import pandas as pd
 
 ######FUNCION LEER ARCHIVO TXT CON NOMBRE ESTACIONES Y EJECUTAR#####
 def read_and_exec():
-  f = open("Prova.txt", "r",encoding='utf8') #####TXT donde lee estaciones##### 
+  f = open("Configuracion Estaciones/Prova.txt", "r",encoding='utf8') #####TXT donde lee estaciones##### 
   for x in f:
     x=x.rstrip("\n")
     Estacion_horas(x)
@@ -68,7 +68,7 @@ def Estacion_horas(Estation):
     i=i+1
   Nombre_ubi=str(df.ubi[0])
   Nombre_tiempo=str(df.fint[10])
-  Nombre_Total="AEMET"+" "+Nombre_tiempo[0:10]+" "+Nombre_ubi+" "+Estation+".csv"
+  Nombre_Total="Datos_Guardados/AEMET"+" "+Nombre_tiempo[0:10]+" "+Nombre_ubi+" "+Estation+".csv"
   df.to_csv(Nombre_Total,index=False)
 
 
