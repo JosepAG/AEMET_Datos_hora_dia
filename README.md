@@ -1,7 +1,7 @@
 # AEMET_Datos_hora_dia
 Programa para ejecutar todos los dias y extraer datos diarios AEMET hora
 
-Ejecutable aemete_mejora.py, la configuracion de las estaciones a extraer datos se definene en Configuracion_Estaciones/Prova.txt, 
+Ejecutable AEMET_MEJORA.py, la configuracion de las estaciones a extraer datos se definene en Configuracion_Estaciones/Prova.txt, 
 añadir lineas con más estaciones a traves de su nombre, ejemplos para Prova.txt:
   "3576X"
   "8416Y"
